@@ -1,0 +1,15 @@
+{
+  "name": "@garrettmorse/d2-chess-archive",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrettmorse/d2-chess-archive.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/garrettmorse/d2-chess-archive#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "https-proxy-agent": "^7.0.6",
+    "node-fetch": "^3.3.2"
+  }
+}
