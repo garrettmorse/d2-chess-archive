@@ -28,7 +28,7 @@ A careful review of the `scrape.js` script will indicate that we're using HTTPS 
 
 You're more than welcome to adjust the API scrape script to your needs, but note that it may take a while to run end to end.
 
-In order to run the script as-is, you'll need to configure `proxies.json` with a list of the proxy hosts (<IP address>:<port> or something like that), as well as create a `.env` file that contains the username and password needed to route the traffic through your proxy. In simple terms, you need to provide enough information to create this URL `http://${process.env.user}:${process.env.password}@${proxy}`. See `getAgent()` in `scrape.js` for details.
+In order to run the script as-is, you'll need to configure `proxies.json` with a list of the proxy hosts (\<IP address>:\<port> or something like that), as well as create a `.env` file that contains the username and password needed to route the traffic through your proxy. In simple terms, you need to provide enough information to create this URL `http://${process.env.user}:${process.env.password}@${proxy}`. See `getAgent()` in `scrape.js` for details.
 
 With your `.env` file and `proxies.json` configured, you can start running the script.
 
