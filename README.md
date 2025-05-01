@@ -61,6 +61,16 @@ $ python src/match.py
 
 This will use `data-best.json` to programmatically find neighbors, and then outputs the results to `tile_id_grid.json`. The format of this file is highly specific to TJ's tool for visualizing the 64x64 grid, found [here](https://tjl.co/queens-gambit-arg/self-service-matches.php). In case the page is no longer available, you can find a screenshot of the result in `common`. I also scraped TJ's site for all of the pieces, which you can find inside of `common/pieces`.
 
+### Input Parsing
+
+I've also included a `parse.py` script that tries its best to transform screenshot submissions like the ones found in the `py/data` folder into a more normalized format akin to `common/pieces`. Feel free to update the `data` folder with your own screenshots to see how `parse.py` handles them!
+
+```sh
+$ python src/parse.py
+```
+
 Happy reproducing!
 
 Open an issue if you have a question, or reach me directly on discord @garrettmorse
+
+
