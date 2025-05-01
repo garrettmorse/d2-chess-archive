@@ -2,6 +2,8 @@
 
 This repo archives a set of scripts that allow you to reproduce the solution to the Destiny 2 "Endgame" ARG puzzle that took place during "Episode: Heresy".
 
+For a bigger-picture "play-by-play" of how the ARG played out, here's a great [reddit post](https://www.reddit.com/r/raidsecrets/s/YnGTc5zKn1) that sums it up nicely.
+
 ## Required Tools
 
 * NodeJS v20+
@@ -74,5 +76,3 @@ $ python src/parse.py
 Happy reproducing!
 
 Open an issue if you have a question, or reach me directly on discord @garrettmorse
-
-
