@@ -60,16 +60,6 @@ def normalize_board(board):
 
   return dst
 
-def find_cells(norm_board):
-  gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-  blur = cv2.GaussianBlur(gray,(7,7),0)
-  blur = cv2.convertScaleAbs(blur, alpha=0.85, beta=0.1)
-
-  pass
-
-def nothing():
-   pass
-
 for fname in os.listdir(input_folder):
   in_path = os.path.join(input_folder, fname)
   # skip non-images
