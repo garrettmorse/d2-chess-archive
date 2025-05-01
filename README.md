@@ -13,7 +13,7 @@ There are both JS and Python projects located in `js` and `py`, respectively, th
 
 ### The Data
 
-First, visit [TJ09](https://github.com/TJ09)'s site, where the majority of the community data was collated. The latest data used to solve the ARG is located [here](https://tjl.co/queens-gambit-arg/data-best.json). If that URL is no longer serving the JSON file, I've also included a snapshot in the `js` folder, which we'll be using to validate the data.
+First, visit [TJ09](https://github.com/TJ09)'s site, where the majority of the community data was collated. The latest data used to solve the ARG is located [here](https://tjl.co/queens-gambit-arg/data-best.json). If that URL is no longer serving the JSON file, I've also included a snapshot in the `common` folder, which we'll be using to validate the data.
 
 With your `data-best.json` in hand, start setting up the JS project.
 
