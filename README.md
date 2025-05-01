@@ -69,6 +69,8 @@ I've also included a `parse.py` script that tries its best to transform screensh
 $ python src/parse.py
 ```
 
+---
+
 Happy reproducing!
 
 Open an issue if you have a question, or reach me directly on discord @garrettmorse
