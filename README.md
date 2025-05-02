@@ -8,6 +8,7 @@ For a bigger-picture "play-by-play" of how the ARG played out, here's a great [r
 
 * NodeJS v20+
 * Python 3.12 and/or Anaconda
+* ffmpeg
 
 ## Getting Started
 
@@ -61,7 +62,20 @@ Thanks to [Ryheff24](https://github.com/Ryheff24/Destiny-2-Community-map-solver)
 $ python src/match.py
 ```
 
-This will use `data-best.json` to programmatically find neighbors, and then outputs the results to `tile_id_grid.json`. The format of this file is highly specific to TJ's tool for visualizing the 64x64 grid, found [here](https://tjl.co/queens-gambit-arg/self-service-matches.php). In case the page is no longer available, you can find a screenshot of the result in `common`. I also scraped TJ's site for all of the pieces, which you can find inside of `common/pieces`.
+This will use `data-best.json` to programmatically find neighbors, and then outputs the results to `tile_id_grid.json`. The format of this file is highly specific to TJ's tool for visualizing the 64x64 grid, found [here](https://tjl.co/queens-gambit-arg/self-service-matches.php). In case the page is no longer available, you can find a screenshot of the result in `common`, or run `assemble.js`. I also scraped TJ's site for all of the pieces, which you can find inside of `common/pieces`.
+
+### Putting it all together
+
+With our generated matches, let's stitch interpreted boards into a 64x64 grid.
+
+For this step, we're switching back to the JS project.
+
+```sh
+$ cd js
+$ node assemble.js
+```
+
+After a brief wait, you should see `final.png` appear in the `js` directory.
 
 ### Input Parsing
 
