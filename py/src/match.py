@@ -205,7 +205,5 @@ for i, row in enumerate(id_grid):
             print(f"None found at ({i}, {j}) with neighbors: {neighbors}")
 
 # 2) Dump *just* that 2D list
-with open('tile_id_grid.json', 'w') as f:
+with open('../common/tile_id_grid.json', 'w') as f:
     json.dump([id_grid], f, indent=4)
-
-
